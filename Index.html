@@ -1,19 +1,66 @@
 <!doctype html>
+
+
 <head>
-<title>Learn Guitar Chords</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="Style.css" rel="stylesheet" type="text/css">
-<div class="header">
 
-<h1>Learn to Play Guitar!</h1>
-</div>
+    <title>Learn Guitar Chords</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Style.css" rel="stylesheet" type="text/css">
+</head>
+
 <body>
+    <div id='main'>
 
-<element class="p1">The guitar is a wonderful instrument with an incredible variety of styles to play, including; figer stlye, strumming, slide, lead and many more!</element>
-<br>
-<br>
-<button class="button button1" onclick="location.href='chord1.html'">Learn the C major Chord</button> <button class="button button2">Learn the G Major Chord</button> <button class="button button3">Learn the D Major Chord</button>
+        <h1 class="header">Learn to Play Guitar!</h1>
 
-<img src="guitar.jpg" alt="Acoustic Guitar" width= "1450px">
+        <p class="p1">The guitar is a wonderful instrument with an incredible variety of styles to play,
+            including; figer stlye, strumming, slide, lead and many more!</p>
+        <br>
+        <br>
+
+
+
+
+        <button class="button button1"
+            onclick="document.getElementById('cchord').style.display = 'block'; document.getElementById('main').style.display = 'none';">Learn
+            the C major Chord</button> <button class="button button2" onclick="document.getElementById('gchord').style.display = 'block'; document.getElementById('main').style.display = 'none';">Learn the G Major Chord</button> <button
+            class="button button3" onclick="document.getElementById('dchord').style.display = 'block'; document.getElementById('main').style.display = 'none';">Learn the D Major Chord</button>
+
+        <img src="guitar.jpg" alt="Acoustic Guitar" width="1450px">
+
+    </div>
+    <div id="cchord" style="display: none">
+            <h1 class="header">The C Major Chord <button class="return" onclick="document.getElementById('main').style.display = 'block'; document.getElementById('cchord').style.display = 'none';">Return to Homepage</button></h1>
+            
+        
+            <p class="p2">The C Major Chord has only what I can describe as a 'hopeful' tone. By this, I mean that it
+                is a resolving chord, one that is used in nearly every pop song to date!</p>
+        
+
+
+    </div>
+    <div id="gchord" style="display: none">
+    <h1 class="header">The G Major Chord</h1>
+    <button class="button return" onclick="document.getElementById('main').style.display = 'block'; document.getElementById('gchord').style.display = 'none';">Return to Homepage</button>
+    <p1 class="p1">Watch this video to learn the G chord</p1>
+    <br>
+    <p1 class="p1">Make sure you pay attention, your going to be tested!</p1>
+    <video class="video" width="1270" height="500" controls>
+        <source src="videoplayback.mp4" type="video/mp4">
+        <source src="https://www.youtube.com/watch?v=EcPhKVAshMI" type="video/ogg">
+        
+    </video>
+    
+    <p>
+    Video courtesy of 
+    <a href="https://www.youtube.com/watch?v=EcPhKVAshMI" target="_blank">How to play the G chord</a>.
+  </p>
+    </div>
+    <div id="dchord" style="display: none">
+        <h1 class="header">The D Chord</h1>
+        <p1> d chor </p1>
+        <button class="button return" onclick="document.getElementById('main').style.display = 'block'; document.getElementById('dchord').style.display = 'none';">Return to Homepage</button>
+    </div>
 </body>
+
 </html>
